@@ -18,16 +18,13 @@ let sumaDesdeHasta = (desde, hasta) => {
         for (let i = hasta; i <= desde; i++) {
             console.log(i);
             sumatorio += i;
-        } else {
-
-            for (let i = desde; i <= hasta; i++) {
-                console.log(i);
-                sumatorio += i;
-            }
         }
-
+    } else {
+        for (let i = desde; i <= hasta; i++) {
+            console.log(i);
+            sumatorio += i;
+        }
     }
-
     // Hasta aquí.
     return sumatorio;
 }

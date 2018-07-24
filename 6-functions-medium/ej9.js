@@ -14,7 +14,11 @@
 let extraerAcronimo = (...input) => {
     let acronimo = '';
     // Aquí tu código.  Desde aquí:
-   
+    for(let iniciales of rest.extraerAcronimo){
+        acronimo  += iniciales[0];
+    }
+
+
     // Hasta aquí.
     return acronimo;
 }
