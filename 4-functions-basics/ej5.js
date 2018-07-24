@@ -8,11 +8,16 @@
 
 let cuentaCaracteres = (texto) => {
     // Aquí tu código.  Desde aquí:
-   
+    if (typeof texto !== 'string') {
+        return 'Debo ser ejecutada con un string';
+    } else {
+        
+        return texto.length;
+    }
+
     
     // Hasta aquí.
 }
-
 
 let test = require('../test.js');
 //  test(functionTotest, [argumento1,argumento2, etc..],  expectedOutput) 

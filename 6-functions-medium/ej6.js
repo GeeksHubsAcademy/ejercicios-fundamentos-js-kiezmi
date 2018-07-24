@@ -1,6 +1,6 @@
 // crea la función  transformaArrayEnOtraConSusLongitudes
-// debe recibir un array 
-// devolver y otro array con las longitudes de los strings recibidos en el array
+// debe recibir un array y
+// devolver otro array con las longitudes de los strings recibidos en el array
 
 // Si la función no recibe un dato tipo object / array  
 // debe devolver el string 'Debo ser ejecutada con un array'
@@ -13,9 +13,16 @@
 let transformaArrayEnOtraConSusLongitudes = (arrayDeStrings) => {
     let arrayDeLongitudes = [];
     // Aquí tu código.  Desde aquí:
+    if (typeof arrayDeStrings === 'object' && arrayDeStrings.length >= 0) {
+        for (let suma of arrayDeStrings) {
+            arrayDeLongitudes.push(suma.length);
+        }
+    } else {
+        return 'Debo ser ejecutada con un array';
+    }
 
     // Hasta aquí.
-    return arrayDeLongitudes
+    return arrayDeLongitudes;
 }
 
 
