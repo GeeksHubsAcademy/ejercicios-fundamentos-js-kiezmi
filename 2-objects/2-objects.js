@@ -7,11 +7,12 @@
 // Aquí tu código
 
 var obj = {
-    a: true,
-    b: false,
-    c: [1, 2, 3],
+    a: {
+        b: false,
+        c: [1, 2, 3],
+    },
     d: 5,
-    f: '',
+    f: 'hola',
 };
 
 // Hasta aquí

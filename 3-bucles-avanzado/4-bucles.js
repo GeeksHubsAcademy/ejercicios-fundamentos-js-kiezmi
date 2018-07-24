@@ -13,7 +13,7 @@ console.log('El array frase es: ', frase);
 var acronimo = '';
 
 for(let letra of frase){
-    acronimo = acronimo + letra[0].toUpperCase();
+    acronimo  += letra[0].toUpperCase();
 }
 
 // Hasta aquí

@@ -20,7 +20,7 @@ console.log('El array original es:  arr =', arr);
 
 let total = 0;
 for (let indice of arr) {
-    total = total + indice;
+    total += indice;
 }
 
 // Hasta aquí

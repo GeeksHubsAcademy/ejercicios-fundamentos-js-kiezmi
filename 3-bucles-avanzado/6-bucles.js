@@ -16,16 +16,11 @@ for (let i = 0; i < giveMeIntegerRandom(10); i++) {
 console.log('El array original es:  arr =', arr);
 // Aquí tu código
 
-let dobleArr=[];
+let dobleArr = [];
 
-for(const NUM of arr){
-dobleArr.push(2*NUM);
+for (const NUM of arr) {
+    dobleArr.push(2 * NUM);
 }
-
-
-
-
-
 
 // Hasta aquí
 console.log('El array nuevo es:  doubleArr =', dobleArr);
@@ -37,14 +32,14 @@ if (typeof dobleArr === 'object' && dobleArr.length >= 0) {
 }
 
 // TEST 2
-if ( dobleArr[0] === arr[0] * 2 || typeof arr[0] === 'undefined') {
+if (dobleArr[0] === arr[0] * 2 || typeof arr[0] === 'undefined') {
     console.log('apruebas');
 } else {
     console.log('suspendes');
 }
 
 // TEST 3
-if (  dobleArr[arr.length - 1] === arr[arr.length - 1] * 2 || typeof arr[arr.length - 1] === 'undefined') {
+if (dobleArr[arr.length - 1] === arr[arr.length - 1] * 2 || typeof arr[arr.length - 1] === 'undefined') {
     console.log('apruebas');
 } else {
     console.log('suspendes');
