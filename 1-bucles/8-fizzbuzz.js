@@ -5,12 +5,15 @@
 // Además los múltiplos de 3 y 5 ha de imprimir GEEKSHUBS
 
 for (i = 1; i <= 100; i++) {
-    if (i = i % 3) {
-       // i = "GEEKS";
-    } else if (i = i % 5) {
-       // i = "HUBS";
-    } else if (i = i % 3 && i % 5) {
-       // i = "GEEKSHUBS"
+
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log("GEEKSHUBS");
+    } else if (i % 3 === 0) {
+        console.log("GEEKS");
+    } else if (i % 5 === 0) {
+        console.log("HUBS");
+    } else {
+        console.log(i);
     }
-    console.log(i);
+
 }

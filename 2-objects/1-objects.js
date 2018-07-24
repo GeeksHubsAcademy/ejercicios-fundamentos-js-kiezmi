@@ -6,6 +6,17 @@
 
 // Aquí tu código
 
+var ordenador = {
+    marca: "La pava",
+    tipo: "portátil",
+    perifericos: ['', 'touchPad'],
+    almacenamiento: {
+        maestro: 0,
+        discos: ['SSD', 'HDD'],
+    },
+};
+
+
 
 
 // Hasta aquí
@@ -47,10 +58,9 @@ if (ordenador.almacenamiento.maestro === 0) {
     console.log('suspendes');
 }
 // TEST 7
-if (ordenador.almacenamiento.discos[ ordenador.almacenamiento.maestro ] === 'SSD') {
+if (ordenador.almacenamiento.discos[ordenador.almacenamiento.maestro] === 'SSD') {
     console.log('apruebas');
-    
+
 } else {
     console.log('suspendes');
 }
-

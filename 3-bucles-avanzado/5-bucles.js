@@ -18,6 +18,10 @@ console.log('El array original es:  arr =', arr);
 
 // Aquí tu código
 
+let total = 0;
+for (let indice of arr) {
+    total = total + indice;
+}
 
 // Hasta aquí
 console.log('El total nuevo es: ', total);

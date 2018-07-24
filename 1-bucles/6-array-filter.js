@@ -37,4 +37,3 @@ let nombre4 = gente.filter(function (persona) {
     return persona.nombre.length === 4;
 })
 console.log(nombre4);
-
