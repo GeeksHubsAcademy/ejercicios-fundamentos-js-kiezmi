@@ -20,7 +20,6 @@ let transformaArrayEnOtraConSusLongitudes = (arrayDeStrings) => {
     } else {
         return 'Debo ser ejecutada con un array';
     }
-
     // Hasta aquí.
     return arrayDeLongitudes;
 }

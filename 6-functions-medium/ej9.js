@@ -4,28 +4,23 @@
 // Debe devolver un string con sus iniciales 
 // Por ejemplo:
 // extraerAcronimo('Estudiante','Del','Bootcamp','Fullstack','Geekshubs') === 'EDBFG'
-
-
 // 
 // utilizar un bucle for of
-
+//
 // Ha de pasar los test adjuntados.
 
 let extraerAcronimo = (...input) => {
     let acronimo = '';
     // Aquí tu código.  Desde aquí:
-    for(let iniciales of rest.extraerAcronimo){
-        acronimo  += iniciales[0];
+    for (let palabra of input) {
+        acronimo += (palabra[0]); //se va sumando al string la letra 0 de cada palabra
     }
-
-
+   // console.log(acronimo); 
     // Hasta aquí.
     return acronimo;
 }
-
-
 let test = require('../test.js');
 
 test(extraerAcronimo, ['Estudiante', 'Del', 'Bootcamp', 'Fullstack', 'Geekshubs'], 'EDBFG');
 test(extraerAcronimo, ['hola', 'caracola'], 'hc');
-test(extraerAcronimo, ['33', '44',' '], '34 ');
+test(extraerAcronimo, ['33', '44', ' '], '34 ');

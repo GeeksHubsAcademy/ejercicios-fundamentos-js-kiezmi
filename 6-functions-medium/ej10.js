@@ -7,15 +7,18 @@
 // conCuantosParametrosMeHanEjecutado(1,2,3,4,5) === 5
 // conCuantosParametrosMeHanEjecutado('a') === 1
 // conCuantosParametrosMeHanEjecutado() === 0
-
+//
 // NO HACE FALTA NINGÚN BUCLE
-
+//
 // Ha de pasar los test adjuntados.
-
+//
 // Aquí tu código.  Desde aquí:
-const conCuantosParametrosMeHanEjecutado;
-// Hasta aquí.
-
+const conCuantosParametrosMeHanEjecutado = (...input) => {
+    let total = 0;
+    total = input.length;
+    return total;
+    // Hasta aquí.
+};
 
 let test = require('../test.js');
 
@@ -26,4 +29,4 @@ let test = require('../test.js');
 
 test(conCuantosParametrosMeHanEjecutado, [], 0);
 test(conCuantosParametrosMeHanEjecutado, ['hola', 'caracola'], 2);
-test(conCuantosParametrosMeHanEjecutado, ['33', '44',' '], 3);
+test(conCuantosParametrosMeHanEjecutado, ['33', '44', ' '], 3);

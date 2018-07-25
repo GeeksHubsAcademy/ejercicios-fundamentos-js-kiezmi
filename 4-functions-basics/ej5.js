@@ -11,11 +11,10 @@ let cuentaCaracteres = (texto) => {
     if (typeof texto !== 'string') {
         return 'Debo ser ejecutada con un string';
     } else {
-        
         return texto.length;
     }
 
-    
+
     // Hasta aquí.
 }
 
