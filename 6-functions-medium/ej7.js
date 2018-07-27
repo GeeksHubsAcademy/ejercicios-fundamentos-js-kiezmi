@@ -20,12 +20,9 @@ let sumaDesdeHasta = (desde, hasta) => {
             sumatorio += i;
         }
     }
-
     // Hasta aquí.
     return sumatorio;
 }
-
-
 let test = require('../test.js');
 
 test(sumaDesdeHasta, [1, 2], 3);
