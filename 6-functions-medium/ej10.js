@@ -15,7 +15,7 @@
 // Aquí tu código.  Desde aquí:
 const conCuantosParametrosMeHanEjecutado = (...input) => {
     let total = 0;
-    total = input.length;
+    total = input.length; // suma la cantidad de item que hay en el array
     return total;
     // Hasta aquí.
 };
