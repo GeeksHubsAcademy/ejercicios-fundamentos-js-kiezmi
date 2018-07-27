@@ -1,7 +1,5 @@
 // Mejoras en la función  sumaDesdeHasta
-
 // Debe hacer los mismo que la función del ejercicio 7 y además:
-
 // si la función recibe un numero de 
 // inicio mayor que el de final debe funcionar igual, sumando los enteros entre ellos.
 // para ello deberemos hacer un bucle en descenso.
